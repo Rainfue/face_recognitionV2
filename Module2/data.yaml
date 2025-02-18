@@ -1,0 +1,26 @@
+# пути к данным
+path: ./face_detection
+train: train/images
+val: valid/images
+test: test/images
+
+# параметры аугментации
+augment: True   # включаем аугментацию
+hsv_h:  # изменение оттенка
+hsv_s:  # изменение насыщенности
+hsv_v:  # изменение яркости
+
+degrees: 30   # поворот
+translate: 0.1  # смещение на 10%
+scale: 0.5    # масштабирование
+shear: 0.2    # сдвиг на 20 градусов
+flipup: 0.1   
+fliplr: 0.1
+
+# оптимизация обучение
+cache: disk
+patience: 5
+
+# кол-во классов и имя классов
+nc: 1
+names: ['face']
